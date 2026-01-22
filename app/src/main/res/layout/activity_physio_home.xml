@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <!-- Header Section -->
+    <ImageView
+        android:id="@+id/ivLogoHeader"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcomePhysio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physiotherapist Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogoHeader" />
+
+    <TextView
+        android:id="@+id/tvSubtitlePhysio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage your practice"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomePhysio" />
+
+    <!-- Actions Grid -->
+    <LinearLayout
+        android:id="@+id/llActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitlePhysio">
+
+        <!-- Appointments -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="View Appointments"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            app:icon="@android:drawable/ic_menu_agenda"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:cornerRadius="12dp"
+            style="@style/Widget.Material3.Button.TonalButton"/>
+
+        <!-- Availability -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Set Availability"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            app:icon="@android:drawable/ic_menu_my_calendar"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:cornerRadius="12dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+        <!-- Profile -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Update Profile"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:cornerRadius="12dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/error"
+        style="@style/Widget.Material3.Button.TextButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

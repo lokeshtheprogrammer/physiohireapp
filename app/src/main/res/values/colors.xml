@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="primary">#00676D</color>
+    <color name="primary_variant">#004E53</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <color name="secondary">#FFB74D</color>
+    <color name="secondary_variant">#FF9800</color>
+    <color name="on_secondary">#000000</color>
+
+    <!-- UI Colors -->
+    <color name="background">#F5F7FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1D1B20</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_hint">#79747E</color>
+
+    <!-- Specifics -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="ripple_color">#1F000000</color>
+    <color name="blue_100">#E3F2FD</color>
+</resources>
